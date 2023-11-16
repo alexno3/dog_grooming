@@ -1,0 +1,122 @@
+/* reset */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* form input, select and button reset */
+
+input, button, select {
+	font: inherit;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+/* header */
+
+.header{
+  background-image: url('../images/banner_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-img{
+  width: 70%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: box-shadow 0.5s;
+  margin: 3px;
+}
+
+.logo-img:hover {
+  box-shadow: 0 0 10px rgba(14, 34, 59, 0.597);
+}
+
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav ul li{
+  margin: 30px 10px 0px 0px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(14, 34, 59);
+  font-weight: 700;
+  transition: background-color 400ms, color 400ms;
+  border-radius: 25px;
+}
+
+.nav ul li:hover{
+  color: white;
+  background-color: rgb(14, 34, 59);
+}
+
+
+/* banner */
+.banner-1-container {
+  height: 100vh; /* Use 100% of the viewport height */
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-1-text,
+.banner-1-img {
+  flex: 1;
+  overflow: hidden;
+  box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+/* title and subtitle */
+.banner-1-text {
+  background-color: lightgray; /* Just for visibility */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+  gap: 50px;
+  padding: 0 100px 0 100px;
+}
+
+.banner-1-text h1{
+  font-size: 40px;
+  margin: 0;
+}
+
+.banner-1-text p{
+  font-size: 30px;
+  margin: 0;
+}
+
+/* img */
+.banner-1-img {
+  display: flex;
+  align-items: stretch;
+}
+
+.banner-1-img img {
+  width: 100%; /* Use 100% of the container width */
+  height: 100%; /* Use 100% of the container height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+

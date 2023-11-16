@@ -1,0 +1,23 @@
+lunaspa - name of the website
+
+banner_1_text = "Beyond Grooming – Crafting Canine Confidence and Charm!"
+
+Welcome to our full-service grooming haven dedicated to your furry loved ones.
+We specialize in pampering your pets with expert care, offering an experience that goes beyond the bath
+
+Contact Us
+
+banner_2_text = 22 years of experience
+
+
+Where passion meets expertise, we are able to transform tails into masterpieces. Trust in our staff for a journey that speaks volumes
+in love, style, and last but not least, well-being
+
+About us
+
+
+
+Guess the number game
+
+footer
+
