@@ -13,6 +13,9 @@ li { list-style: none; }
 a {
 	color: inherit;
 	text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 /* form input, select and button reset */
@@ -24,88 +27,118 @@ input, button, select {
 	outline: none;
 }
 
+html{
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+
 /* header */
 
 .header{
-  background-image: url('../images/banner_1.jpg');
+  background-image: url('../images/atanas-teodosiev-GvhSUEN-Lm8-unsplash\ \(1\).jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
 }
 
 .logo-img{
-  width: 70%;
+  width: 100%;
   border-radius: 50%;
   object-fit: cover;
-  transition: box-shadow 0.5s;
   margin: 3px;
 }
 
-.logo-img:hover {
-  box-shadow: 0 0 10px rgba(14, 34, 59, 0.597);
-}
 
-.nav ul{
+.navbar ul{
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.nav ul li{
+.navbar ul li{
   margin: 30px 10px 0px 0px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(14, 34, 59);
   font-weight: 700;
   transition: background-color 400ms, color 400ms;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
-.nav ul li:hover{
+.navbar ul li:hover{
   color: white;
   background-color: rgb(14, 34, 59);
+  cursor: pointer;
+}
+
+/* main */
+.main{
+  background: #e8e7e7;
+
+  position: relative;
+  overflow: hidden;
 }
 
 
 /* banner */
 .banner-1-container {
-  height: 100vh; /* Use 100% of the viewport height */
+  min-height: 100vh; /* Use 100% of the viewport height */
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.banner-1-text,
+/* .banner-1-text,
 .banner-1-img {
   flex: 1;
   overflow: hidden;
-  box-sizing: border-box; /* Include padding and border in the total width/height */
-}
+  box-sizing: border-box; Include padding and border in the total width/height
+} */
 
 /* title and subtitle */
 .banner-1-text {
-  background-color: lightgray; /* Just for visibility */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 50px;
   gap: 50px;
-  padding: 0 100px 0 100px;
+  padding: 0 100px;
 }
 
-.banner-1-text h1{
+.banner-1-text h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 40px;
   margin: 0;
 }
 
 .banner-1-text p{
+  font-family: 'Raleway';
   font-size: 30px;
   margin: 0;
+}
+
+/* banner anchor */
+
+.banner-1-text a{
+  font-size: 20px;
+  padding: 10px;
+  transition: background-color 400ms, color 400ms;
+  border-radius: 25px;
+  text-transform: uppercase;
+
+}
+
+.banner-1-text a:hover{
+  color: hsl(26, 100%, 99%);
+  background-color: black;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+
 }
 
 /* img */
@@ -120,3 +153,169 @@ input, button, select {
   object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
+/* javascript game */
+
+.javascript-container{
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.javascript-container h3{
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+.javascript-container p{
+  font-family: 'Raleway';
+  font-size: 20px;
+}
+
+/* add a black border to input */
+.javascript-container input{
+  border: 2px solid rgb(114, 99, 99);
+  padding: 5px;
+  width: auto;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+  font-family: 'Raleway';
+}
+
+/* focus effect on hover */
+.javascript-container input:hover{
+  background-color: #f0f0f0;
+  border-color: black;
+}
+
+/* button */
+.javascript-container button{
+  font-family: 'Montserrat';
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.javascript-container button:hover{
+  color: hsl(26, 100%, 99%);
+  background-color: black;
+  cursor: pointer;
+}
+
+/* reviews */
+
+.review { 
+  padding: 65px 25px;
+  font-family: 'Poppins';
+}
+
+.review-h2 {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 4px;
+	margin-bottom: 80px;
+}
+
+.review-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 60px;
+}
+
+.review-customer { text-align: center; }
+
+.customer-img-box {
+	width:  70px;
+	height: 70px;
+	border-radius: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+	overflow: hidden;
+} 
+
+.customer-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.customer-text {
+	max-width: 350px;
+	line-height: 1.8;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.customer-name {
+	margin-bottom: 14px;
+}
+
+.customer-title {
+	font-size: 14px;
+}
+
+
+
+/* footer */
+.footer{
+  background: hsl(0, 0%, 97%);
+}
+
+
+/* navbar */
+.footer-navbar {
+	display: 		 flex;
+	justify-content: center;
+	align-items: 	 center;
+  padding: 20px;
+	gap: 55px;
+	margin-bottom: 90px;
+}
+
+.footer-navbar a {
+	color: rgb(0, 0, 0);
+	transition: 0.3s ease;
+}
+
+/* social ion-icons */
+.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: 	 center;
+	gap: 25px;
+  margin-bottom: 20px;
+}
+
+.social-links ion-icon {
+	color: hsl(0, 0%, 0%);
+	font-size: 25px;
+	transition: 0.3s ease;
+}
+
+.footer-navbar a:hover,
+.social-links ion-icon:hover { color: #848383; }
+
+/* copyright */
+.copyright {
+  color: #aaa8a8;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+  border-top: 1px solid hsl(0, 0%, 76%);
+}
+
+.copyright a {
+  color: hsl(230, 8%, 29%);
+  font-weight: 500;
+}
+
+.copyright a:hover { text-decoration: underline; }
