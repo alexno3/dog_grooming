@@ -34,25 +34,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // navbar page link stays hovered when pressed
+// Get the current page path
+  // Get the current page path
+  var currentPath = document.location.pathname;
 
-  document.addEventListener('DOMContentLoaded', function() {
-    // Get all the navbar links
-    var navLinks = document.querySelectorAll('.nav-list a');
-  
-    // Add click event listeners to each link
-    navLinks.forEach(function(link) {
-      link.addEventListener('click', function() {
-        // Remove the 'active' class from all links
-        navLinks.forEach(function(link) {
-          link.classList.remove('active');
-        });
-  
-        // Add the 'active' class to the clicked link
-        link.classList.add('active');
-      });
-    });
-  });
-  
+  // Get the navigation links
+  var galleryLink = document.getElementById('gallery');
+  var aboutLink = document.getElementById('about');
+  var contactLink = document.getElementById('contact');
+
+  // Check if the current path ends with the page name and add the "hover" class accordingly
+  if (currentPath.endsWith('/gallery.html')) {
+    galleryLink.classList.add('hover');
+  } else if (currentPath.endsWith('/about.html')) {
+    aboutLink.classList.add('hover');
+  } else if (currentPath.endsWith('/contact.html')) {
+    contactLink.classList.add('hover');
+  }
   
   

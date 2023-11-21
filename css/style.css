@@ -56,7 +56,7 @@ html{
 .navbar ul{
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 40px;
 }
 
 .navbar ul li{
@@ -77,9 +77,11 @@ html{
 
 /* js script to remain hovered when on that page */
 
-.nav-list a.active {
-  color: hsl(26, 100%, 99%);
-  background-color: black;
+.hover {
+  color: white;
+  background-color: rgb(14, 34, 59);
+  padding: 10px;
+  border-radius: 20px;
 }
 
 
@@ -333,3 +335,45 @@ html{
 }
 
 .copyright a:hover { text-decoration: underline; }
+
+
+.deck-list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.deck-item{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.deck-item img{
+	width: 300px;
+	height: 400px;
+	object-fit: cover;
+	margin: 5px;
+  -webkit-transition: .3s ease-in-out;
+	transition: transform 0.3s
+	border-radius: 10px;
+}
+
+.deck-item:hover img{
+	transform: scale(1.015);
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%)
+	cursor: pointer;
+}
+
+.deck-item p{
+	font-size: 'Open-Sans', sans-serif;
+	font-weight: 500;
+	color: #d8d8d8;
+	transition: font-size 0.2s;
+}
+
+.deck-item:hover p{
+	color: #fbfafa;
+	cursor: pointer;
+}
