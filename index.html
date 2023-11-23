@@ -23,16 +23,18 @@
 <body>
 
   <!-- header  -->
-  <header class="header">
+  <header class="header min-vh-100">
     <!-- navbar -->
-    <nav class="navbar  navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+
+        <!-- logo -->
         <a href="index.html"><img src="images/logo_2.png" alt="logo" class="logo-img navbar-brand"></a>
         <!-- nav list -->
         <ul class="navbar-nav">
-          <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
-          <li class="nav-item"><a href="gallery.html" id="gallery" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="about.html" id="about" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="contact.html" id="contact" class="nav-link">Contact Us</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link fs-4 rounded-2">Home</a></li>
+          <li class="nav-item"><a href="gallery.html" id="gallery" class="nav-link fs-4 rounded-2">Gallery</a></li>
+          <li class="nav-item"><a href="about.html" id="about" class="nav-link fs-4 rounded-2">About Us</a></li>
+          <li class="nav-item"><a href="contact.html" id="contact" class="nav-link fs-4 rounded-2">Contact Us</a></li>
         </ul>
 
     </nav>
@@ -43,52 +45,53 @@
   <main class="main">
 
     <!-- gallery -->
-    <section class="banner-1-container" id="gallery">
+    <section class="banner-1-container min-vh-100 overflow-hidden d-grid" id="gallery">
 
-      <div class="banner-1-text">
+      <!-- container for title and subtitle -->
+      <div class="banner-1-text d-flex flex-column justify-content-center align-items-center h-100 px-5 gap-5">
 
-        <h2 class="banner-title">Beyond Grooming – Crafting Canine Confidence and Charm!</h2>
-        <p class="banner-subtitle">Welcome to our full-service grooming haven dedicated to your furry loved ones.
+        <h2 class="banner-title fw-500 fs-8">Beyond Grooming – Crafting Canine Confidence and Charm!</h2>
+        <p class="banner-subtitle fs-4">Welcome to our full-service grooming haven dedicated to your furry loved ones.
           We specialize in pampering your pets with expert care, offering an experience that goes beyond the bath.</p>
 
-        <a href="gallery.html" class="text-decoration-none">Gallery</a>
+        <a href="gallery.html" class="fs-5 p-2 rounded-pill " >Gallery</a>
 
       </div>
-
+      <!-- banner img -->
       <div class="banner-1-img">
 
-        <img src="images/daniel-hering-0_ole_Z2pV8-unsplash.jpg" alt="dog facing left" loading="lazy">
+        <img src="images/daniel-hering-0_ole_Z2pV8-unsplash.jpg" alt="dog facing left" loading="lazy" class="w-100 h-100 object-fit-cover">
 
       </div>
 
     </section>
 
     <!-- about -->
-    <section class="banner-1-container" id="about">
+    <section class="banner-1-container min-vh-100 overflow-hidden d-grid" id="about">
 
+      <!-- img -->
       <div class="banner-1-img">
 
-        <img src="images/pauline-loroy-U3aF7hgUSrk-unsplash.jpg" alt="dog portret" loading="lazy">
+        <img src="images/pauline-loroy-U3aF7hgUSrk-unsplash.jpg" alt="dog portret" loading="lazy" class="w-100 h-100 object-fit-cover">
 
       </div>
 
-      <div class="banner-1-text">
+      <!-- container for title and subtitle -->
+      <div class="d-flex flex-column justify-content-center align-items-center h-100 px-5 banner-1-text gap-5">
 
-        <h2 class="banner-title">22 years of experience</h2>
-        <p class="banner-subtitle">Where passion meets expertise, we are able to transform tails into masterpieces.
+        <h2 class="banner-title fw-500 fs-8">22 years of experience</h2>
+        <p class="banner-subtitle fs-4">Where passion meets expertise, we are able to transform tails into masterpieces.
           Trust in our staff for a journey that speaks volumes
           in love, style, and last but not least, well-being.</p>
-        <a href="page2.html">About Us</a>
+        <a href="page2.html" class="fs-5 p-2 rounded-pill ">About Us</a>
 
       </div>
-
-
 
     </section>
 
     <!-- javascript game -->
 
-    <section class="javascript-container" id="minigame">
+    <section class="javascript-container fs-5 d-flex flex-column justify-content-center align-items-center mx-2 my-5 rounded-1 border border-2 border-black" id="minigame">
 
       <h3>Guess the number!</h3>
       <p>Guess a number between 1 and 10:</p>
