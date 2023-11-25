@@ -55,3 +55,54 @@ if (currentPath.endsWith('/gallery.html')) {
   contactLink.classList.add('hover');
 }
 
+// script for gallery image
+
+document.addEventListener("DOMContentLoaded", function () {
+  var galleryItems = document.querySelectorAll(".gallery-item img");
+  var activeOverlay = null;
+
+  galleryItems.forEach(function (item, index) {
+    item.addEventListener("click", function () {
+      // Check if there's an active overlay and fade it out
+      if (activeOverlay) {
+        activeOverlay.style.opacity = 0;
+        setTimeout(function () {
+          document.body.removeChild(activeOverlay);
+        }, 500);
+      }
+
+      var overlay = document.createElement("div");
+      overlay.className = "overlay";
+
+      var overlayText = document.createElement("div");
+      overlayText.className = "overlay-text";
+      overlayText.textContent = "Your overlay text here"; // Replace with your desired text
+
+      overlay.appendChild(overlayText);
+      document.body.appendChild(overlay);
+
+      var rect = item.getBoundingClientRect();
+      overlay.style.top = rect.top + "px";
+      overlay.style.left = rect.left + "px";
+      overlay.style.width = rect.width + "px";
+      overlay.style.height = rect.height + "px";
+
+      // Set the currently active overlay
+      activeOverlay = overlay;
+
+      // Wait for the overlay to be added to the DOM before fading in
+      setTimeout(function () {
+        overlay.style.opacity = 1;
+      }, 10);
+
+      // Clicking on the overlay removes it
+      overlay.addEventListener("click", function () {
+        overlay.style.opacity = 0;
+        setTimeout(function () {
+          document.body.removeChild(overlay);
+        }, 500);
+      });
+    });
+  });
+});
+
