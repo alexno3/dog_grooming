@@ -3,16 +3,18 @@
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -20,14 +22,16 @@ a {
 
 /* form input, select and button reset */
 
-input, button, select {
-	font: inherit;
-	background: none;
-	border: none;
-	outline: none;
+input,
+button,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
 }
 
-html{
+html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -35,24 +39,25 @@ html{
 
 /* header */
 
-.header{
+.header {
   background-image: url('../images/atanas-teodosiev-GvhSUEN-Lm8-unsplash\ \(1\).jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.navbar-nav .nav-link{
+.navbar-nav .nav-link {
   margin: 20px 50px 0px 0px;
   color: rgb(14, 34, 59);
   transition: background-color 400ms, color 400ms;
 }
 
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link:hover {
   color: white;
   background-color: rgb(14, 34, 59);
-  cursor: pointer;
-} 
+  cursor: 
+  pointer;
+}
 
 /* js script to remain hovered when on that page */
 
@@ -65,7 +70,7 @@ html{
 
 
 /* main */
-.main{
+.main {
   background: #e8e7e7;
 }
 
@@ -76,46 +81,46 @@ html{
 }
 
 
-.banner-1-text h2{
+.banner-1-text h2 {
   font-family: 'Poppins', sans-serif;
 }
 
-.banner-1-text p{
+.banner-1-text p {
   font-family: 'Raleway', sans-serif;
 
 }
 
 /* banner anchor */
 
-.banner-1-text a{
+.banner-1-text a {
   transition: background-color 400ms, color 400ms;
 }
 
-.banner-1-text a:hover{
+.banner-1-text a:hover {
   color: hsl(26, 100%, 99%);
   background-color: black;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 
 }
 
 
 /* javascript game */
 
-.javascript-container{
+.javascript-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.javascript-container h3{
+.javascript-container h3 {
   font-family: 'Poppins';
   font-weight: 400;
 }
 
-.javascript-container p{
+.javascript-container p {
   font-family: 'Raleway';
 }
 
 /* add a black border to input */
-.javascript-container input{
+.javascript-container input {
   border: 2px solid rgb(114, 99, 99);
   transition: border-color 0.3s ease, background-color 0.3s ease;
   text-align: center;
@@ -123,18 +128,18 @@ html{
 }
 
 /* focus effect on hover */
-.javascript-container input:hover{
+.javascript-container input:hover {
   background-color: #f0f0f0;
   border-color: black;
 }
 
 /* button */
-.javascript-container button{
+.javascript-container button {
   font-family: 'Montserrat';
   transition: color 0.3s, background-color 0.3s;
 }
 
-.javascript-container button:hover{
+.javascript-container button:hover {
   color: hsl(26, 100%, 99%);
   background-color: black;
   cursor: pointer;
@@ -148,37 +153,37 @@ html{
 
 /* reviews */
 
-.review { 
+.review {
   font-family: 'Poppins';
 }
 
 .review-h2 {
-	letter-spacing: 4px;
-	margin-bottom: 80px;
+  letter-spacing: 4px;
+  margin-bottom: 80px;
 }
 
 .review-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
 }
 
 .customer-img-box {
-	width:  70px;
-	height: 70px;
-} 
+  width: 70px;
+  height: 70px;
+}
 
 .customer-text {
-	max-width: 350px;
-	line-height: 1.8;
+  max-width: 350px;
+  line-height: 1.8;
 }
 
 .customer-name {
-	margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 /* footer */
-.footer{
+.footer {
   background: hsl(0, 0%, 97%);
 }
 
@@ -186,29 +191,31 @@ html{
 /* navbar */
 .footer-navbar {
   padding: 20px;
-	gap: 55px;
-	margin-bottom: 90px;
+  gap: 55px;
+  margin-bottom: 90px;
 }
 
 .footer-navbar a {
-	color: rgb(0, 0, 0);
-	transition: 0.3s ease;
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease;
 }
 
 /* social ion-icons */
 .social-links {
-	gap: 25px;
+  gap: 25px;
   margin-bottom: 20px;
 }
 
 .social-links ion-icon {
-	color: hsl(0, 0%, 0%);
-	font-size: 25px;
-	transition: 0.3s ease;
+  color: hsl(0, 0%, 0%);
+  font-size: 25px;
+  transition: 0.3s ease;
 }
 
 .footer-navbar a:hover,
-.social-links ion-icon:hover { color: #848383; }
+.social-links ion-icon:hover {
+  color: #848383;
+}
 
 /* copyright */
 .copyright {
@@ -224,26 +231,34 @@ html{
   font-weight: 500;
 }
 
-.copyright a:hover { text-decoration: underline; }
+.copyright a:hover {
+  text-decoration: underline;
+}
 
 
 /* gallery page */
 
 /* class for current page not hovering */
 
-.header .navbar .navbar-nav .current-page{ color: white; }
+.header .navbar .navbar-nav .current-page {
+  color: white;
+}
 
 .gallery-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px;
-  margin: 0 auto; /* Center the container horizontally */
-  max-width: 1200px; /* Adjust the max-width value as needed */
+  margin: 0 auto;
+  /* Center the container horizontally */
+  max-width: 1200px;
+  /* Adjust the max-width value as needed */
 }
 
 .gallery-item {
-  width: 75%;
+  width: 50%;
   margin-top: 40px;
+  position: relative;
+  cursor: pointer;
 }
 
 .gallery-item img {
@@ -251,47 +266,74 @@ html{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s, filter 0.3s;
+  transition: scale 0.3s, filter 0.3s;
   border-radius: 10px;
+  scale: .95;
 }
 
 
 
-
-.gallery-item:hover img{
-	transform: scale(1.015);
-	filter: grayscale(100%) blur(2px);
-	cursor: pointer;
+.gallery-item:hover img {
+  scale: 1;
+  filter:  blur(2px) grayscale(50%);
+  cursor: pointer;
 }
 
-.gallery-item p{
-	font-size: 'Open-Sans', sans-serif;
-	font-weight: 500;
-	color: #d8d8d8;
-	transition: font-size 0.2s;
+
+/* image content */
+
+.content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
-.gallery-item:hover p{
-	color: #fbfafa;
-	cursor: pointer;
+.active{
+  opacity: 1;
 }
+
+.content h2{
+
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: white;
+  letter-spacing: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* h2 colors */
+
+
+
+
+.content p{
+
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  width: 70%;
+  letter-spacing: 3px;
+  line-height: 1.3;
+}
+
+
+
+/* .content > *{
+  transform: translateY(25px) translateZ(0);
+  transition: transform 0.5s;
+}
+
+.content:hover > * {
+  transform: translateY(0) translateZ(0);
+} */
 
 /* overlay style */
 
-.overlay {
-  position: fixed; /* Change from 'absolute' to 'fixed' */
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  opacity: 0;
-  transition: opacity 0.5s;
-  z-index: 1000;
-}
-
-.overlay-text {
-  max-width: 80%;
-  padding: 20px;
-  text-align: center;
-}
