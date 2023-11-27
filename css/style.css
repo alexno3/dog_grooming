@@ -162,11 +162,7 @@ html {
   margin-bottom: 80px;
 }
 
-.review-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
-}
+
 
 .customer-img-box {
   width: 70px;
@@ -250,9 +246,7 @@ html {
   flex-wrap: wrap;
   padding: 20px;
   margin: 0 auto;
-  /* Center the container horizontally */
   max-width: 1200px;
-  /* Adjust the max-width value as needed */
 }
 
 .gallery-item {
@@ -305,12 +299,6 @@ html {
   letter-spacing: 4px;
   font-family: 'Montserrat', sans-serif;
 }
-
-
-/* h2 colors */
-
-
-
 
 .content p{
 

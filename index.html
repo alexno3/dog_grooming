@@ -61,9 +61,15 @@
       <!-- banner img -->
       <div class="banner-1-img">
 
-        <img src="images/daniel-hering-0_ole_Z2pV8-unsplash.jpg" alt="dog facing left" loading="lazy"
-          class="w-100 h-100 object-fit-cover">
-
+        <!-- media query for the img so that under the 629 limit it will choose a different img -->
+        <picture>
+          <source media="(max-width: 628px)" srcset="images/banner_1_small.jpg">
+          <source media="(min-width: 629px)" srcset="images/daniel-hering-0_ole_Z2pV8-unsplash.jpg">
+          
+          <img src="images/daniel-hering-0_ole_Z2pV8-unsplash.jpg" alt="dog portrait" loading="lazy"
+               class="w-100 h-100 object-fit-cover">
+        </picture>
+        
       </div>
 
     </section>
@@ -109,76 +115,75 @@
 
 
 
-    <!-- reviews-->
+ <!-- reviews-->
 
-    <section class="review py-4 px-2" id="reviews">
+<section class="review py-4 px-2" id="reviews">
 
-      <h2 class="review-h2 fs-5 text-center text-uppercase">Reviews</h2>
+  <h2 class="review-h2 fs-5 text-center text-uppercase">Reviews</h2>
 
-      <div class="review-grid">
+  <div class="review d-flex flex-wrap justify-content-center">
 
-        <!-- customer review -->
+    <!-- customer review -->
 
-        <div class="review-customer text-center">
+    <div class="review-customer text-center mx-3 mb-4">
 
-          <div class="customer-img-box rounded-5 m-auto mb-4 overflow-hidden">
-            <img src="./images/vlad-melnikov-h6JNBe_zU6g-unsplash.jpg" alt="customer man image"
-              class="customer-img w-100 h-100 object-fit-cover" loading="lazy">
-          </div>
-
-          <p class="customer-text m-auto mb-4">
-            Impeccable service and a happy, well-groomed pet every visit.I will highly recommend LunaSpa!
-          </p>
-
-          <h4 class="customer-name mb-3">Stephen C.</h4>
-
-          <p class="customer-title fs-6">Developer</p>
-
-        </div>
-
-        <!-- customer review -->
-
-        <div class="review-customer text-center">
-
-          <div class="customer-img-box rounded-5 m-auto mb-4 overflow-hidden">
-            <img src="./images/emanuel-minca-BTsLppmB7l8-unsplash.jpg" alt="customer woman image"
-              class="customer-img w-100 h-100 object-fit-cover" loading="lazy">
-          </div>
-
-          <p class="customer-text m-auto mb-4">
-            My pup always comes out looking adorable, and
-            the staff's attention to detail is commendable. 
-
-          </p>
-
-          <h4 class="customer-name mb-3">Cathy L.</h4>
-
-          <p class="customer-title fs-6">Storyteller</p>
-
-        </div>
-
-        <!-- customer review -->
-
-        <div class="review-customer text-center">
-
-          <div class="customer-img-box rounded-5 m-auto mb-4 overflow-hidden">
-            <img src="./images/victor-grabarczyk-N04FIfHhv_k-unsplash.jpg" alt="customer dog image"
-              class="customer-img w-100 h-100 object-fit-cover" loading="lazy">
-          </div>
-
-          <p class="customer-text m-auto mb-4">
-            I leave smelling paw-sitively delightful every time. LunaSpa really gets my four-paw rating!
-          </p>
-
-          <h4 class="customer-name mb-3">Doug E.</h4>
-
-          <p class="customer-title fs-6">Jack Russel</p>
-
-        </div>
-
+      <div class="customer-img-box rounded-5 m-auto mb-4 overflow-hidden">
+        <img src="./images/vlad-melnikov-h6JNBe_zU6g-unsplash.jpg" alt="customer man image"
+          class="customer-img w-100 h-100 object-fit-cover" loading="lazy">
       </div>
 
-    </section>
+      <p class="customer-text m-auto mb-4">
+        Impeccable service and a happy, well-groomed pet every visit. I will highly recommend LunaSpa!
+      </p>
+
+      <h4 class="customer-name mb-3">Stephen C.</h4>
+
+      <p class="customer-title fs-6">Developer</p>
+
+    </div>
+
+    <!-- customer review -->
+
+    <div class="review-customer text-center mx-3 mb-4">
+
+      <div class="customer-img-box rounded-5 m-auto mb-4 overflow-hidden">
+        <img src="./images/emanuel-minca-BTsLppmB7l8-unsplash.jpg" alt="customer woman image"
+          class="customer-img w-100 h-100 object-fit-cover" loading="lazy">
+      </div>
+
+      <p class="customer-text m-auto mb-4">
+        My pup always comes out looking adorable, and the staff's attention to detail is commendable.
+      </p>
+
+      <h4 class="customer-name mb-3">Cathy L.</h4>
+
+      <p class="customer-title fs-6">Storyteller</p>
+
+    </div>
+
+    <!-- customer review -->
+
+    <div class="review-customer text-center mx-3 mb-4">
+
+      <div class="customer-img-box rounded-5 m-auto mb-4 overflow-hidden">
+        <img src="./images/victor-grabarczyk-N04FIfHhv_k-unsplash.jpg" alt="customer dog image"
+          class="customer-img w-100 h-100 object-fit-cover" loading="lazy">
+      </div>
+
+      <p class="customer-text m-auto mb-4">
+        I leave smelling paw-sitively delightful every time. LunaSpa really gets my four-paw rating!
+      </p>
+
+      <h4 class="customer-name mb-3">Doug E.</h4>
+
+      <p class="customer-title fs-6">Jack Russell</p>
+
+    </div>
+
+  </div>
+
+</section>
+
 
   </main>
 

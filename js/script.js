@@ -5,10 +5,10 @@ function generateRandomNumber() {
 const secretNumber = generateRandomNumber();
 
 function checkGuess() {
-  // Get the user's guess from the input field
+  // get user guess
   const userGuess = parseInt(document.getElementById('guessInput').value);
 
-  // Check if the guess is correct
+  // if statement to check guess
   if (userGuess === secretNumber) {
     document.getElementById('message').innerHTML = 'Congratulations! You guessed right! The number was ' + secretNumber + '!';
   } else if (userGuess < 0 || userGuess > 10) {
@@ -19,34 +19,30 @@ function checkGuess() {
   }
 }
 
-// button animation script when clicked
+// button animation script when clicked for index.html js game
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Get the button element
+  
   var button = document.getElementById('animatedButton');
 
-  // Add a click event listener to the button
   button.addEventListener('click', function () {
-    // Add the 'clicked' class to the button
     button.classList.add('clicked');
 
-    // Remove the 'clicked' class after a short delay (adjust the delay as needed)
     setTimeout(function () {
       button.classList.remove('clicked');
     }, 100);
   });
 });
 
-// Get the current page path
-// Get the current page path
+// get the current path
 var currentPath = document.location.pathname;
 
-// Get the navigation links
+// get the nav links
 var galleryLink = document.getElementById('gallery');
 var aboutLink = document.getElementById('about');
 var contactLink = document.getElementById('contact');
 
-// Check if the current path ends with the page name and add the "hover" class accordingly
+// if statement, check if current path ends with any of the nav items, then add hover class to it
 if (currentPath.endsWith('/gallery.html')) {
   galleryLink.classList.add('hover');
 } else if (currentPath.endsWith('/about.html')) {
@@ -55,10 +51,9 @@ if (currentPath.endsWith('/gallery.html')) {
   contactLink.classList.add('hover');
 }
 
-// script for image overlay
+// script for image overlay based on toggle
 
 function toggleActiveClass(clickedElement) {
-  // Toggle the .active class on the clicked element
   clickedElement.classList.toggle('active');
 }
 
