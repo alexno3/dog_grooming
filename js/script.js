@@ -22,9 +22,11 @@ function checkGuess() {
 }
 
 
+console.log('Script is running!');
 
 // get the current path
 var currentPath = document.location.pathname;
+console.log('Current Path:', currentPath);
 
 // get the nav links
 var homeLink = document.getElementById('home');
@@ -34,14 +36,19 @@ var contactLink = document.getElementById('contact');
 
 // if statement, check if current path ends with any of the nav items, then add hover class to it
 if (currentPath.endsWith('/gallery.html')) {
+  console.log('Current path ends with /gallery.html');
   galleryLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
 } else if (currentPath.endsWith('/aboutus.html')) {
+  console.log('Current path ends with /aboutus.html');
   aboutLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
 } else if (currentPath.endsWith('/contact.html')) {
+  console.log('Current path ends with /contact.html');
   contactLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
 } else {
+  console.log('Current path does not match known paths');
   homeLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
 }
+
 
 
 
