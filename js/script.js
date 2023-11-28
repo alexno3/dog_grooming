@@ -35,14 +35,14 @@ var aboutLink = document.getElementById('about');
 var contactLink = document.getElementById('contact');
 
 // if statement, check if current path ends with any of the nav items, then add hover class to it
-if (currentPath.endsWith('/gallery.html')) {
-  console.log('Current path ends with /gallery.html');
+if (currentPath.endsWith('/gallery')) {
+  console.log('Current path ends with /gallery');
   galleryLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
-} else if (currentPath.endsWith('/aboutus.html')) {
-  console.log('Current path ends with /aboutus.html');
+} else if (currentPath.endsWith('/aboutus')) {
+  console.log('Current path ends with /aboutus');
   aboutLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
-} else if (currentPath.endsWith('/contact.html')) {
-  console.log('Current path ends with /contact.html');
+} else if (currentPath.endsWith('/contact')) {
+  console.log('Current path ends with /contact');
   contactLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
 } else {
   console.log('Current path does not match known paths');
