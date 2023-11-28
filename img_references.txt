@@ -1,0 +1,25 @@
+index.html
+
+- logo_2.png on FreeLogoDesign. [https://logo-maker.freelogodesign.org/] 
+- daniel-hering-0_ole_Z2pV8-unsplash.jpg by Daniel Hering on Unsplash [https://unsplash.com/photos/shallow-focus-photography-of-adult-yellow-labrador-retriever-0_ole_Z2pV8]
+- images/pauline-loroy-U3aF7hgUSrk-unsplash.jpg by Pauline Loroy on Unsplash [https://unsplash.com/photos/white-and-brown-long-coat-large-dog-U3aF7hgUSrk]
+- atanas-teodosiev-GvhSUEN-Lm8-unsplash.jpg by Atanas Teodosiev on Unsplash[https://unsplash.com/photos/grayscale-photography-of-short-coated-dog-GvhSUEN-Lm8]
+- vlad-melnikov-h6JNBe_zU6g-unsplash.jpg by Vlad Melnikov on Unsplash [https://unsplash.com/photos/a-man-with-a-white-shirt-h6JNBe_zU6g]
+- emanuel-minca-BTsLppmB7l8-unsplash by Emanuel Minca on Unsplash [https://unsplash.com/photos/girl-in-white-turtleneck-shirt-and-red-lipstick-BTsLppmB7l8]
+- victor-grabarczyk-N04FIfHhv_k-unsplash.jpg by Victor Grabarczyk on Unsplash[https://unsplash.com/photos/black-and-white-short-coated-dog-N04FIfHhv_k]
+
+gallery.html
+
+- fredrik-ohlander-tGBRQw52Thw-unsplash.jpg by Fredrik Öhlander on Unsplash[https://unsplash.com/photos/short-coated-brown-dog-tGBRQw52Thw]
+- charlesdeluvio-K4mSJ7kc0As-unsplash.jpg by Charles Deluvio on Unsplash[https://unsplash.com/photos/black-dog-wearing-blue-denim-collar-K4mSJ7kc0As]
+- roberto-nickson-gRHEt2kF3NU-unsplash.jpg by Roberto Nickson on Unsplash[https://unsplash.com/photos/brown-puppy-on-bed-gRHEt2kF3NU]
+- nita-anggraeni-goenawan-2JihaEVs8Dc-unsplash.jpg by Nita Anggraeni Goenawan on Unsplash [https://unsplash.com/photos/golden-retriever-puppy-on-white-background-2JihaEVs8Dc]
+
+aboutus.html
+
+- amber-kipp-75715CVEJhI-unsplash.jpg by Amber Kipp on Unsplash[https://unsplash.com/photos/selective-focus-photography-of-orange-and-white-cat-on-brown-table-75715CVEJhI]
+
+contact.html
+
+- ja-san-miguel-_-QQuvAwQ-0-unsplash.jpg by Ja San Miguel on Unsplash[https://unsplash.com/photos/golden-retriever-inside-car-_-QQuvAwQ-0] 
+

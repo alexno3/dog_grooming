@@ -1,3 +1,5 @@
+// function to generate random number
+
 function generateRandomNumber() {
   return Math.floor(Math.random() * 10) + 1;
 }
@@ -19,42 +21,69 @@ function checkGuess() {
   }
 }
 
-// button animation script when clicked for index.html js game
 
-document.addEventListener('DOMContentLoaded', function () {
-  
-  var button = document.getElementById('animatedButton');
-
-  button.addEventListener('click', function () {
-    button.classList.add('clicked');
-
-    setTimeout(function () {
-      button.classList.remove('clicked');
-    }, 100);
-  });
-});
 
 // get the current path
 var currentPath = document.location.pathname;
 
 // get the nav links
+var homeLink = document.getElementById('home');
 var galleryLink = document.getElementById('gallery');
 var aboutLink = document.getElementById('about');
 var contactLink = document.getElementById('contact');
 
 // if statement, check if current path ends with any of the nav items, then add hover class to it
 if (currentPath.endsWith('/gallery.html')) {
-  galleryLink.classList.add('hover');
-} else if (currentPath.endsWith('/about.html')) {
-  aboutLink.classList.add('hover');
+  galleryLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
+} else if (currentPath.endsWith('/aboutus.html')) {
+  aboutLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
 } else if (currentPath.endsWith('/contact.html')) {
-  contactLink.classList.add('hover');
-}
-
-// script for image overlay based on toggle
-
-function toggleActiveClass(clickedElement) {
-  clickedElement.classList.toggle('active');
+  contactLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
+} else {
+  homeLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
 }
 
 
+
+// script for contact page to disable input if not selected
+
+function changeInput() {
+  var otherPetCheckbox = document.getElementById("otherPet");
+  var otherPetTextInput = document.getElementById("otherPetText");
+
+  if (otherPetCheckbox.checked) {
+      otherPetTextInput.removeAttribute("disabled");
+  } else {
+      otherPetTextInput.setAttribute("disabled", "diabled");
+      otherPetTextInput.value = ""; // Clear the text when unchecked
+  }
+}
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to handle scroll events
+function revealOnScroll() {
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach((card) => {
+    if (isInViewport(card)) {
+      card.style.opacity = 1;
+      card.style.transform = 'translateX(0)';
+    }
+  });
+}
+
+// Attach the revealOnScroll function to the scroll event
+document.addEventListener('scroll', revealOnScroll);
+
+// Initial check in case some cards are already in the viewport when the page loads
+window.addEventListener('load', revealOnScroll);

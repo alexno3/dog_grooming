@@ -1,5 +1,4 @@
 /* reset */
-
 *,
 *::before,
 *::after {
@@ -21,7 +20,6 @@ a {
 }
 
 /* form input, select and button reset */
-
 input,
 button,
 select {
@@ -36,11 +34,9 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* header */
-
 .header {
-  background-image: url('../images/atanas-teodosiev-GvhSUEN-Lm8-unsplash\ \(1\).jpg');
+  background-image: url('../images/atanas-teodosiev-GvhSUEN-Lm8-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,12 +51,10 @@ html {
 .navbar-nav .nav-link:hover {
   color: white;
   background-color: rgb(14, 34, 59);
-  cursor: 
-  pointer;
+  cursor: pointer;
 }
 
 /* js script to remain hovered when on that page */
-
 .hover {
   color: white;
   background-color: rgb(14, 34, 59);
@@ -68,18 +62,15 @@ html {
   border-radius: 20px;
 }
 
-
 /* main */
 .main {
   background: #e8e7e7;
 }
 
-
 /* banner */
 .banner-1-container {
   grid-template-columns: 1fr 1fr;
 }
-
 
 .banner-1-text h2 {
   font-family: 'Poppins', sans-serif;
@@ -87,11 +78,9 @@ html {
 
 .banner-1-text p {
   font-family: 'Raleway', sans-serif;
-
 }
 
 /* banner anchor */
-
 .banner-1-text a {
   transition: background-color 400ms, color 400ms;
 }
@@ -100,12 +89,9 @@ html {
   color: hsl(26, 100%, 99%);
   background-color: black;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
 }
 
-
 /* javascript game */
-
 .javascript-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -152,7 +138,6 @@ html {
 }
 
 /* reviews */
-
 .review {
   font-family: 'Poppins';
 }
@@ -161,8 +146,6 @@ html {
   letter-spacing: 4px;
   margin-bottom: 80px;
 }
-
-
 
 .customer-img-box {
   width: 70px;
@@ -183,7 +166,6 @@ html {
 .footer {
   background: hsl(0, 0%, 97%);
 }
-
 
 /* navbar */
 .footer-navbar {
@@ -232,11 +214,9 @@ html {
   text-decoration: underline;
 }
 
-
 /* gallery page */
 
 /* class for current page not hovering */
-
 .header .navbar .navbar-nav .current-page {
   color: white;
 }
@@ -266,17 +246,13 @@ html {
   scale: .95;
 }
 
-
-
 .gallery-item:hover img {
   scale: 1;
   filter:  blur(2px) grayscale(50%);
   cursor: pointer;
 }
 
-
 /* image content */
-
 .content{
   position: absolute;
   top: 0;
@@ -301,7 +277,6 @@ html {
 }
 
 .content p{
-
   text-align: center;
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -310,6 +285,129 @@ html {
   line-height: 1.3;
 }
 
+/* general padding */
+.general-pad {
+  padding: 48px;
+}
+
+/* About Us Style */
+.service-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-box {
+  width: 60%;
+}
+
+.service-title {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.service-text {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.space-right {
+  padding-right: 6px;
+}
+
+#aboutus-last {
+  display: flex;
+  flex-direction: row;
+}
+
+/* java script style for cards movement efect */
+.card-move-l {
+  margin: 10px;
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.5s, transform 1.0s;
+}
+
+.card-move-r {
+  margin: 10px;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.5s, transform 1.0s;
+}
+
+/* Contact Us Style */
+.form-section {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-title {
+  margin-bottom: 12px;
+  text-decoration: underline;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 50%;
+  padding: 48px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: rgb(14, 34, 59);
+  border: 1px solid rgb(14, 34, 59);
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgba(14, 34, 59, 0);
+  color: rgb(14, 34, 59);
+}
+
+.form-image-container {
+  width: 50%;
+}
+
+.form-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#form-number-pets {
+  margin-bottom: 12px;
+}
+
+#form-number-pets select{
+  border: 1px lightgray solid;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
 
 /* media queries */
 
@@ -320,5 +418,74 @@ html {
   font-size: 12px;
   }
 
+}
+
+/*  media query for max-width of 600px */
+
+@media screen and (max-width: 600px){
+
+  .banner-gallery {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .banner-about {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .banner-1-text {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+  }
+  
+  /*  media query for contact page */
+  .form-section {
+    flex-direction: column;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .form-image-container {
+    width: 100%;
+  }
+
+  /*  media query for about us page */
+
+  .service-banner {
+    padding: 24px !important;
+  }
+
+  .service-box {
+    width: 90%;
+  }
+  
+  .service-title {
+    font-size: 18px !important;
+  }
+  
+  .service-text {
+    font-size: 14px !important;
+  }
+
+  /*  media query for nav bar */
+  .navbar {
+    flex-direction: column !important;
+  }
+
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+
+  .nav-link {
+    margin: 8px !important;
+  }
+
+  .logo-img {
+    width: 120px !important;
+  }
 
 }
