@@ -42,7 +42,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.navbar img{
+.navbar .logo-img{
   width: 100%;
   height: auto;
 }
