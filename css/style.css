@@ -34,12 +34,17 @@ html {
   scroll-behavior: smooth;
 }
 
-/* header */
+/* header  */
 .header {
   background-image: url('../images/header/atanas-teodosiev-GvhSUEN-Lm8-unsplash.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.navbar img{
+  max-width: 100%;
+  height: auto;
 }
 
 .navbar-nav .nav-link {
