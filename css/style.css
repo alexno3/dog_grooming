@@ -42,6 +42,10 @@ html {
   background-repeat: no-repeat;
 }
 
+.navbar img{
+  max-width: 100%;
+  height: auto;
+}
 
 .navbar-nav .nav-link {
   margin: 20px 50px 0px 0px;
