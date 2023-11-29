@@ -106,7 +106,7 @@ html {
   font-weight: 400;
 }
 
-.javascript-container p {
+.javascript-container p, label {
   font-family: 'Raleway';
 }
 
