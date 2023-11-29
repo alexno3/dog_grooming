@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-  
-  // function to generate random number
+// function to generate random number
 
 function generateRandomNumber() {
   return Math.floor(Math.random() * 10) + 1;
@@ -90,8 +88,3 @@ document.addEventListener('scroll', revealOnScroll);
 
 // Initial check in case some cards are already in the viewport when the page loads
 window.addEventListener('load', revealOnScroll);
-
-
-});
-
-
