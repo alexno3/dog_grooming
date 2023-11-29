@@ -43,7 +43,7 @@ html {
 }
 
 .navbar img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -208,7 +208,7 @@ html {
   text-align: center;
   padding: 5px;
   border-top: 1px solid hsl(0, 0%, 76%);
-  text-shadow: 1px 1px 1px #fff;
+  
 }
 
 .copyright a {
