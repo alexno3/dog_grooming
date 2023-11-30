@@ -30,6 +30,7 @@ select {
 }
 
 html {
+  max-width: 3840px;
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -416,6 +417,14 @@ button:hover {
 }
 
 /* media queries */
+
+/* media query for min-width of 3248px */
+
+@media screen and (min-width: 3248px){
+html{
+font-size: 30px;
+}
+
 
 /*  media query for max-width of 844px */
 
