@@ -60,13 +60,6 @@ html {
   cursor: pointer;
 }
 
-/* js script to remain hovered when on that page */
-.hover {
-  color: white;
-  background-color: rgb(14, 34, 59);
-  padding: 10px;
-  border-radius: 20px;
-}
 
 /* main */
 .main {
@@ -94,7 +87,6 @@ html {
 .banner-1-text a:hover {
   color: hsl(26, 100%, 99%);
   background-color: black;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* javascript game */
