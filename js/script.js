@@ -23,6 +23,27 @@ function checkGuess() {
 
 
 
+// get the current path
+var currentPath = document.location.pathname;
+
+// get the nav links
+var homeLink = document.getElementById('home');
+var galleryLink = document.getElementById('gallery');
+var aboutLink = document.getElementById('about');
+var contactLink = document.getElementById('contact');
+
+// if statement, check if current path ends with any of the nav items, then add hover class to it
+if (currentPath.endsWith('/gallery')) {
+  galleryLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
+} else if (currentPath.endsWith('/aboutus')) {
+  aboutLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
+} else if (currentPath.endsWith('/contact')) {
+  contactLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
+} else {
+  homeLink.classList.add('text-decoration-underline', 'disabled', 'text-white');
+}
+
+
 
 
 // script for contact page to disable input if not selected
