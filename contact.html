@@ -85,15 +85,15 @@
         <form action="submit_form.php" method="post" data-netlify = "true">
           <div class="mb-3">
             <label class="form-label" for="name">*Name:</label>
-            <input class="form-control" type="text" id="name" name="name" required minlength="3" maxlength="20" placeholder="Please enter your name">
+            <input class="form-control" type="text" id="name" name="name" required minlength="2" maxlength="20" aria-placeholder="Please enter your name">
           </div>
           <div class="mb-3">
             <label class="form-label" for="email">*Email:</label>
-            <input class="form-control" type="email" id="email" name="email" required>
+            <input class="form-control" type="email" id="email" name="email" required aria-placeholder="Please enter your email">
           </div>
           <div class="mb-3">
             <label class="form-label" for="phone">*Phone:</label>
-            <input class="form-control" type="tel" id="phone" name="phone" required maxlength="10" pattern="[0-9]{10}">
+            <input class="form-control" type="tel" id="phone" name="phone" required maxlength="10" pattern="[0-9]{10}" aria-placeholder="Please enter your phone number">
           </div>
           <label>Pet category:</label>
           <div class="pet-checkboxes mb-3">
